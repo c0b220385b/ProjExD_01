@@ -8,6 +8,7 @@ def main():
     clock  = pg.time.Clock()
     bg_img = pg.image.load("ex01/fig/pg_bg.jpg")
     bird3_img = pg.image.load("ex01/fig/3.png")
+    bird3_img = pg.transform.flip("bird3_img", True, False)
     tmr = 0
     while True:
         for event in pg.event.get():
